@@ -1,3 +1,5 @@
+Created using MS SQL Server.
+
 Business Objective:
 
 The objective is for an online retail store to perform an analysis of its sales data in order to acquire actionable insights and facilitate informed decision-making.
