@@ -1,4 +1,6 @@
 -- 50 items were purchased, with mutiple items being used in certain orders.
+-- Each item had a fixed item price, but quantities may vary.
+
 
 INSERT INTO Order_Items (Item_ID, Order_ID, Product_ID, Quantity, Price) VALUES
   (1, 1, 1, 5, 10.99),
