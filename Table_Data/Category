@@ -1,0 +1,9 @@
+-- Generated 5 categories, there is no relationship between the vendor, category, and product. All random generations.
+
+INSERT INTO Category (Category_ID, Category_Name)
+VALUES
+    (1, 'Electronics'),
+    (2, 'Clothing'),
+    (3, 'Home Decor'),
+    (4, 'Books'),
+    (5, 'Sports');
