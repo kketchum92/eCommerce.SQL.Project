@@ -4,7 +4,7 @@ CREATE DATABASE eCommerce.SQL.Project
 
 
 -- Creating each Table, with data types.
--- No NULLS or  blank values.
+-- No NULLS or blank values.
 
 CREATE TABLE Customers (
 	Customer_ID INT NOT NULL,
