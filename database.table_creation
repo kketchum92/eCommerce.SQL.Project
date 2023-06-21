@@ -17,16 +17,19 @@ CREATE TABLE Customers (
 	ZipCode VARCHAR(10) NOT NULL,
 	PRIMARY KEY (Customer_ID)
 );
+
 CREATE TABLE Supplier (
 	Supplier_ID INT NOT NULL,
 	Supplier_Name VARCHAR(255) NOT NULL,
 	PRIMARY KEY (Supplier_ID),
 );
+
 CREATE TABLE Category (
 	Category_ID INT NOT NULL,
 	Category_Name VARCHAR(255) NOT NULL,
 	PRIMARY KEY (Category_ID)
 );
+
 CREATE TABLE Products (
 	Product_ID INT NOT NULL,
 	Product_Name VARCHAR(255) NOT NULL,
@@ -36,6 +39,7 @@ CREATE TABLE Products (
 	FOREIGN KEY (Category_ID) REFERENCES Category(Category_ID),
 	FOREIGN KEY (Supplier_ID) REFERENCES Supplier(Supplier_ID)
 );
+
 CREATE TABLE Orders (
 	Order_ID INT NOT NULL,
 	Customer_ID INT NOT NULL,
@@ -44,6 +48,7 @@ CREATE TABLE Orders (
 	PRIMARY KEY (Order_ID),
 	FOREIGN KEY (Customer_ID) REFERENCES Customers(Customer_ID)
 );
+
 CREATE TABLE Order_Items (
 	Item_ID INT NOT NULL,
 	Order_ID INT NOT NULL,
